@@ -5,7 +5,9 @@
 use crate::state::KeyboardState;
 use crate::VKey;
 use std::fmt;
-use std::hash::{DefaultHasher, Hash, Hasher};
+
+use std::collections::hash_map::DefaultHasher;
+use std::hash::{Hash, Hasher};
 
 /// Represents a keyboard hotkey.
 ///

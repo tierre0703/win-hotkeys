@@ -18,6 +18,8 @@ use windows::Win32::UI::WindowsAndMessaging::{
     UnhookWindowsHookEx, KBDLLHOOKSTRUCT, MSG, WH_KEYBOARD_LL, WM_KEYDOWN, WM_SYSKEYDOWN,
 };
 
+use std::mem::size_of;
+
 /// Timeout for blocking key events, measured in milliseconds.
 const TIMEOUT: Duration = Duration::from_millis(250);
 
